@@ -55,5 +55,4 @@ public class QuestaoController {
             return ResponseEntity.notFound().build();   
         }
     }
-    
 }
