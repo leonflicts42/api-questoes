@@ -44,4 +44,7 @@ public class Questao {
     @Column(columnDefinition = "TEXT",nullable = false)
     private String alternativaE;
 
+    @Column(nullable = false)
+    private char gabarito;
+    
 }
