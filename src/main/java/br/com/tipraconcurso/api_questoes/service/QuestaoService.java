@@ -28,7 +28,7 @@ public class QuestaoService {
     }
 
     //Listar todas as questões
-    public List<QuestaoDTO> listarQuestoes(){
+    public List<QuestaoDTO> listarTodas(){
         return questaoRepository.findAll()
             .stream()
             .map(this::converterParaDTO)
