@@ -16,6 +16,11 @@ public class QuestaoController {
     @Autowired
     private QuestaoService questaoService;
 
+    @GetMapping // Mapeia requisições GET para /teste
+    public String helloWorld() {
+        return "Olá do Spring Boot! Conexão OK!";
+    }
+
     // Endpoint para criar uma nova questão
     @PostMapping("/api-questoes")
     public ResponseEntity<QuestaoDTO> criarQuestao(@RequestBody QuestaoDTO questaoDTO){
