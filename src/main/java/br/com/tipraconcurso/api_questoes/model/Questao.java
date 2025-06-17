@@ -29,19 +29,19 @@ public class Questao {
     @Column(columnDefinition = "TEXT",nullable = false)
     private String enunciado;
 
-    @Column(columnDefinition = "TEXT",nullable = false)
+    @Column(columnDefinition = "TEXT")
     private String alternativaA;
 
-    @Column(columnDefinition = "TEXT",nullable = false)
+    @Column(columnDefinition = "TEXT")
     private String alternativaB;
 
-    @Column(columnDefinition = "TEXT",nullable = false)
+    @Column(columnDefinition = "TEXT")
     private String alternativaC;
 
-    @Column(columnDefinition = "TEXT",nullable = false)
+    @Column(columnDefinition = "TEXT")
     private String alternativaD;
 
-    @Column(columnDefinition = "TEXT",nullable = false)
+    @Column(columnDefinition = "TEXT")
     private String alternativaE;
 
     @Column(nullable = false)
