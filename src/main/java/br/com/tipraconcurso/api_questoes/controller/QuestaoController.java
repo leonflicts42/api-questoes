@@ -10,26 +10,26 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api-questoes") // Prefixo para todos os endpoints desta controller
+@RequestMapping("/questoes") // Prefixo para todos os endpoints desta controller
 public class QuestaoController {
 
     @Autowired
     private QuestaoService questaoService;
 
-    @GetMapping // Mapeia requisições GET para /teste
+    @GetMapping("/hello") // Mapeia requisições GET para /hello
     public String helloWorld() {
         return "Olá do Spring Boot! Conexão OK!";
     }
 
     // Endpoint para criar uma nova questão
-    @PostMapping("/api-questoes")
+    @PostMapping
     public ResponseEntity<QuestaoDTO> criarQuestao(@RequestBody QuestaoDTO questaoDTO){
         QuestaoDTO novaQuestao = questaoService.criarQuestao(questaoDTO);
         return new ResponseEntity<>(novaQuestao, HttpStatus.CREATED);
     }
 
     // Endpoint para listar todas as questões
-    @GetMapping("/api-questoes")
+    @GetMapping
     public ResponseEntity<List<QuestaoDTO>> listarTodasAsQuestoes(){
         List<QuestaoDTO> questoes = questaoService.listarTodas();
         return ResponseEntity.ok(questoes);
