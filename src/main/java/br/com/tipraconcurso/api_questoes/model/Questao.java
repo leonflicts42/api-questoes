@@ -26,6 +26,9 @@ public class Questao {
     @Column(nullable = false)
     private String ano;
 
+    //@Column(columnDefinition = "TEXT",nullable = false)
+    //private String tipo;
+
     @Column(columnDefinition = "TEXT",nullable = false)
     private String enunciado;
 

@@ -13,6 +13,7 @@ public class QuestaoDTO {
     private String banca;
     private String orgao;
     private String ano;
+    //private String tipo;
     private String enunciado;
     private String alternativaA;
     private String alternativaB;
