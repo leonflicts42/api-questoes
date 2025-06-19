@@ -37,7 +37,8 @@ public class QuestaoService {
 
     //Listar questões por ID
     public Optional<QuestaoDTO> buscarPorId(Long id){
-        return questaoRepository.findById(id).map(this::converterParaDTO);
+        return questaoRepository.findById(id)
+            .map(this::converterParaDTO);
     }
 
     //Atualizar uma questão
